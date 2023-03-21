@@ -7,18 +7,15 @@
 int main(void)
 {
 	int alp = 'a';
-	int ALP = 'A';
 
 	while (alp <= 'z')
 	{
-		putchar(alp);
-		alp = alp + 1;
-	}
-	while (ALP <= 'Z')
-	{
-		putchar(ALP);
-		ALP = ALP + 1;
+		if ((alp != 'e') && (alp != 'q'))
+		{	putchar(alp);
+		}
+		alp++;
 	}
 	putchar('\n');
 	return (0);
 }
+
