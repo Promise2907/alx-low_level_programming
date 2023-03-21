@@ -1,30 +1,15 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
 /**
-* main - main function to generate random number
+* main - A program to print digit of base 10
 * Return: Always 0 (Success)
 */
 int main(void)
-{
-	int n;
-	int num;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	printf("Last digit of %d is ", n);
-	num = n % 10;
-	if (num > 5)
+{int a;
+	for (a = 0; a < 10; a++)
 	{
-		printf("%d and is greater than 5\n", num);
+		putchar('0' + a);
 	}
-	else if ((num < 6) && (num < 0))
-	{
-		printf("%d and is less than 6 and not 0\n", num);
-	}
-	else
-	{
-		printf("%d and is 0\n", num);
-	}
+	putchar('\n');
 	return (0);
 }
